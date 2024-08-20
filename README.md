@@ -17,7 +17,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/notes-application.git
+git clone [https://github.com/your-username/notes-application.git](https://github.com/Tausif702/MyNotes.git)
 Open the project in Android Studio.
 
 Build and run the application:
