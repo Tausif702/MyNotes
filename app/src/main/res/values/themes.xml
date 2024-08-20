@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.MyNotes" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/app_color_dark</item>
+        <item name="colorSecondary">@color/app_color</item>
+    </style>
+
+    <!-- Customize your dark theme here -->
+    <style name="Theme.MyNotes" parent="Base.Theme.MyNotes">
+        <!-- Customize the color for Toolbar background -->
+        <item name="colorPrimary">@color/app_color_dark</item>
+        <item name="colorSecondary">@color/app_color</item>
+        <item name="toolbarStyle">@color/app_color_dark</item>
+    </style>
+
+    <!-- Custom Toolbar style -->
+    <style name="CustomToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/app_color</item> <!-- Solid color -->
+        <!-- <item name="android:background">@drawable/toolbar_background</item> --> <!-- Drawable -->
+    </style>
+</resources>

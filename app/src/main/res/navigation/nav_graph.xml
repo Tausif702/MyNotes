@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/addNotesFragment"
+        android:name="com.tausif702.mynotes.fragments.AddNotesFragment"
+        android:label="AddNotesFragment" >
+        <action
+            android:id="@+id/action_addNotesFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.tausif702.mynotes.fragments.EditFragment"
+        android:label="EditFragment" >
+        <action
+            android:id="@+id/action_editFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+        <argument
+            android:name="note"
+            app:argType="com.tausif702.mynotes.models.Note"
+            app:nullable="true"/>
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.tausif702.mynotes.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addNotesFragment"
+            app:destination="@id/addNotesFragment" />
+    </fragment>
+</navigation>
